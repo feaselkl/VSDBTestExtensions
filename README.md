@@ -37,3 +37,12 @@ If you enter a sequence, each result set in that sequence will be eligible for c
 
 ###Comma-Separated List (e.g., 1,3,6)
 If you enter a comma-separated list, each result set in that list will be eligible for comparison.
+
+##Installing VSDBTestExtensions
+To install VSDBTestExtensions, first grab the code and build the solution.  By default, the project DLL gets copied to $(ProgramFiles)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\SQLDB\TestConditions\.  Visual Studio uses this folder to determine what custom test conditions are available to Visual Studio database projects.  If your TestConditions folder is not located in this area, right-click on the VSDBTestExtensions project and select Properties --> Build Events and change the copy statement in the "Post-build event command line" box to write to the appropriate folder.
+
+Note that Visual Studio 2015 is not required; this project is known to work with Visual Studio 2013 Professional Edition as well as 2015 Professional and Community editions.  With 2013, you will need to change the TestConditions folder.
+
+If you get an Access Denied error when trying to copy, your UAC settings are preventing Visual Studio from copying to that folder.  One way to get around this is to right-click on the TestConditions folder and select Properties.  Then go to the Security tab and click Edit.  Grant Users the Full Control option on this folder.
+
+From there, you can add the DLL to your Visual Studio database unit test projects.  You will need to make sure that your database project matches the DLL's .NET Framework version.  By default, this is 4.5.2.
