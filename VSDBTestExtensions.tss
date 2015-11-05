@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>c:\sourcecode\vsdbtestextensions\vsdbtestextensions\datasetcomparison.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\sourcecode\vsdbtestextensions\vsdbtestextensions\rowcounttestcondition.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\SourceCode\VSDBTestExtensions\VSDBTestExtensions\SchemaCompareTestCondition.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>c:\sourcecode\vsdbtestextensions\vsdbtestextensions\datacomparetestcondition.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
